@@ -35,6 +35,9 @@
                                 <state key="normal" title="I'm a Middle School Student">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="oWO-9f-Tiu" kind="show" id="aRP-tR-cZX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eso-9K-Uz7">
                                 <rect key="frame" x="67.5" y="464" width="279" height="42"/>
@@ -46,6 +49,9 @@
                                 <state key="normal" title="I'm a High School Student">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="oWO-9f-Tiu" kind="show" id="2iC-JZ-0CD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gn-cJ-aCM">
                                 <rect key="frame" x="82" y="541" width="250" height="46"/>
@@ -57,6 +63,9 @@
                                 <state key="normal" title="Im a College Student">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="oWO-9f-Tiu" kind="show" id="UuT-t9-8sM"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P2r-dD-s92">
                                 <rect key="frame" x="75.5" y="214" width="281" height="144"/>
@@ -171,6 +180,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Menu"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="DnT-Si-djE"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.71583488539999995" green="1" blue="0.90682679389999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -199,4 +211,7 @@
     <resources>
         <image name="Screen Shot 2019-07-15 at 2.30.22 PM" width="532" height="41"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="2iC-JZ-0CD"/>
+    </inferredMetricsTieBreakers>
 </document>
