@@ -13,6 +13,7 @@
 		CC7004FF22DCFC3D002EBC5F /* AceOpportunties.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC7004FD22DCFC3D002EBC5F /* AceOpportunties.xcdatamodeld */; };
 		CC70050122DCFC41002EBC5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC70050022DCFC41002EBC5F /* Assets.xcassets */; };
 		CC70050422DCFC41002EBC5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC70050222DCFC41002EBC5F /* LaunchScreen.storyboard */; };
+		CC70050C22DD0BBF002EBC5F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC70050B22DD0BBF002EBC5F /* HomeViewController.swift */; };
 		CCC549AD22DD068200859405 /* OpportunitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC549AC22DD068200859405 /* OpportunitiesViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		CC70050022DCFC41002EBC5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC70050322DCFC41002EBC5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC70050522DCFC41002EBC5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC70050B22DD0BBF002EBC5F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CCC549AC22DD068200859405 /* OpportunitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpportunitiesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -42,6 +44,7 @@
 		CC7004EA22DCFC3D002EBC5F = {
 			isa = PBXGroup;
 			children = (
+				CC70050B22DD0BBF002EBC5F /* HomeViewController.swift */,
 				CC7004F522DCFC3D002EBC5F /* AceOpportunties */,
 				CC7004F422DCFC3D002EBC5F /* Products */,
 			);
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC70050C22DD0BBF002EBC5F /* HomeViewController.swift in Sources */,
 				CCC549AD22DD068200859405 /* OpportunitiesViewController.swift in Sources */,
 				CC7004F922DCFC3D002EBC5F /* ViewController.swift in Sources */,
 				CC7004FF22DCFC3D002EBC5F /* AceOpportunties.xcdatamodeld in Sources */,

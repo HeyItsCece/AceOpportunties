@@ -36,6 +36,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="MiddleSchool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SD9-qG-Hss"/>
                                     <segue destination="oWO-9f-Tiu" kind="show" id="aRP-tR-cZX"/>
                                 </connections>
                             </button>
@@ -50,6 +51,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="HighSchool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iqO-ut-UdS"/>
                                     <segue destination="oWO-9f-Tiu" kind="show" id="2iC-JZ-0CD"/>
                                 </connections>
                             </button>
@@ -64,6 +66,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="College:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D13-Hg-uNx"/>
                                     <segue destination="oWO-9f-Tiu" kind="show" id="UuT-t9-8sM"/>
                                 </connections>
                             </button>
