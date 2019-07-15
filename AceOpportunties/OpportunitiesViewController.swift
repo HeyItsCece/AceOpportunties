@@ -12,6 +12,13 @@ class OpportunitiesViewController: UIViewController {
 
     @IBOutlet weak var OpportunitiesTableView: UITableView!
     
+    struct Opportunity {
+        var title: String
+        var details: String
+    }
+    
+    var hs_programs: [Opportunity] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
