@@ -13,6 +13,7 @@
 		CC7004FF22DCFC3D002EBC5F /* AceOpportunties.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC7004FD22DCFC3D002EBC5F /* AceOpportunties.xcdatamodeld */; };
 		CC70050122DCFC41002EBC5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC70050022DCFC41002EBC5F /* Assets.xcassets */; };
 		CC70050422DCFC41002EBC5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC70050222DCFC41002EBC5F /* LaunchScreen.storyboard */; };
+		CCC549AD22DD068200859405 /* OpportunitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC549AC22DD068200859405 /* OpportunitiesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CC70050022DCFC41002EBC5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC70050322DCFC41002EBC5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC70050522DCFC41002EBC5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCC549AC22DD068200859405 /* OpportunitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpportunitiesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				CC7004F622DCFC3D002EBC5F /* AppDelegate.swift */,
 				CC7004F822DCFC3D002EBC5F /* ViewController.swift */,
 				CC7004FA22DCFC3D002EBC5F /* Main.storyboard */,
+				CCC549AC22DD068200859405 /* OpportunitiesViewController.swift */,
 				CC70050022DCFC41002EBC5F /* Assets.xcassets */,
 				CC70050222DCFC41002EBC5F /* LaunchScreen.storyboard */,
 				CC70050522DCFC41002EBC5F /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCC549AD22DD068200859405 /* OpportunitiesViewController.swift in Sources */,
 				CC7004F922DCFC3D002EBC5F /* ViewController.swift in Sources */,
 				CC7004FF22DCFC3D002EBC5F /* AceOpportunties.xcdatamodeld in Sources */,
 				CC7004F722DCFC3D002EBC5F /* AppDelegate.swift in Sources */,

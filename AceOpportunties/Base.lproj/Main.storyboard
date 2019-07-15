@@ -119,10 +119,10 @@
             </objects>
             <point key="canvasLocation" x="128.98550724637681" y="133.92857142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Opportunities View Controller-->
         <scene sceneID="mTI-uo-vvP">
             <objects>
-                <viewController id="oWO-9f-Tiu" sceneMemberID="viewController">
+                <viewController id="oWO-9f-Tiu" customClass="OpportunitiesViewController" customModule="AceOpportunties" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3dD-jY-xTu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -202,6 +202,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3X9-2t-FnZ"/>
                     </view>
+                    <connections>
+                        <outlet property="OpportunitiesTableView" destination="7pr-Gk-FXw" id="bIi-1x-0Jk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BHx-nW-ttp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
