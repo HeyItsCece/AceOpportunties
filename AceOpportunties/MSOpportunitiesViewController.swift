@@ -1,24 +1,15 @@
 //
-//  OpportunitiesViewController.swift
+//  MSOpportunitiesViewController.swift
 //  AceOpportunties
 //
-//  Created by Girls Who Code on 7/15/19.
+//  Created by Girls Who Code on 7/16/19.
 //  Copyright © 2019 Girls Who Code. All rights reserved.
 //
 
 import UIKit
 
-class OpportunitiesViewController: UIViewController {
+class MSOpportunitiesViewController: UIViewController {
 
-    @IBOutlet weak var OpportunitiesTableView: UITableView!
-    
-    struct Opportunity {
-        var title: String
-        var details: String
-    }
-    
-    var hs_programs: [Opportunity] = []
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
