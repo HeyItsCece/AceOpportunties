@@ -10,6 +10,8 @@ import UIKit
 
 class MSOpportunitiesViewController: UIViewController {
 
+    @IBOutlet weak var msOpportunitiesTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
