@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class MSOpportunitiesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -31,8 +32,10 @@ class MSOpportunitiesViewController: UIViewController, UITableViewDataSource, UI
     }
     
     func getData() {
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Opportunity")
+        request.predicate = NSPredicate(format: "ages = %@", "MS")
         do {
-            msOpportunities = try context.fetch(Opportunity.fetchRequest())
+            msOpportunities = try context.fetch(request) as! [Opportunity]
             if (msOpportunities.count == 0) {
                 for i in 0 ... msOpportunities_titles.count - 1 {
                     var test: Opportunity = Opportunity(context: context)
