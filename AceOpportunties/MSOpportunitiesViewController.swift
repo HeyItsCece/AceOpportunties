@@ -34,18 +34,20 @@ class MSOpportunitiesViewController: UIViewController, UITableViewDataSource, UI
                 test.title = "testing"
                 test.details = "details about testing"
                 test.ages = "MS"
+                msOpportunities.append(test)
                 (UIApplication.shared.delegate as! AppDelegate).saveContext()
             }
-            print(msOpportunities)
             DispatchQueue.main.async {
                 self.msOpportunitiesTableView.reloadData()
             }
+            print(msOpportunities[0].title)
         } catch {
             print("Couldn't fetch data")
         }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(msOpportunities.count)
         return msOpportunities.count
     }
     
@@ -58,21 +60,6 @@ class MSOpportunitiesViewController: UIViewController, UITableViewDataSource, UI
     
     override func viewDidAppear(_ animated: Bool) {
         getData()
-    }
-    
-    func applicationWillTerminate(_ application: UIApplication) {
-        self.saveContext()
-    }
-    
-    func saveContext() {
-        if context.hasChanges {
-            do {
-                try context.save()
-            } catch {
-                let nserror = error as NSError
-                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
-            }
-        }
     }
     
     /*

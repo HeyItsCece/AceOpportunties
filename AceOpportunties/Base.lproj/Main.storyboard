@@ -144,6 +144,10 @@
                                         <color key="backgroundColor" red="0.71583488539999995" green="1" blue="0.90682679389999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="oWO-9f-Tiu" id="3eM-1a-UFX"/>
+                                    <outlet property="delegate" destination="oWO-9f-Tiu" id="wMP-Cp-3t7"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Acc-4M-9yE">
                                 <rect key="frame" x="219.5" y="797" width="169.5" height="40"/>
@@ -171,13 +175,13 @@
                         <color key="backgroundColor" red="0.71583488539999995" green="1" blue="0.90682679389999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Acc-4M-9yE" firstAttribute="leading" secondItem="kKq-Ds-0Jt" secondAttribute="trailing" constant="25" id="0ts-PO-Wbh"/>
-                            <constraint firstItem="7pr-Gk-FXw" firstAttribute="leading" secondItem="3X9-2t-FnZ" secondAttribute="leading" id="8bu-aR-fMe"/>
+                            <constraint firstItem="7pr-Gk-FXw" firstAttribute="top" secondItem="3X9-2t-FnZ" secondAttribute="top" id="0zk-cS-xMY"/>
                             <constraint firstItem="3X9-2t-FnZ" firstAttribute="bottom" secondItem="Acc-4M-9yE" secondAttribute="bottom" constant="25" id="BC5-sc-gnv"/>
                             <constraint firstItem="3X9-2t-FnZ" firstAttribute="bottom" secondItem="kKq-Ds-0Jt" secondAttribute="bottom" constant="25" id="Ffp-Fi-JG9"/>
-                            <constraint firstItem="7pr-Gk-FXw" firstAttribute="top" secondItem="3X9-2t-FnZ" secondAttribute="top" id="OT2-71-aDn"/>
-                            <constraint firstItem="7pr-Gk-FXw" firstAttribute="centerX" secondItem="3X9-2t-FnZ" secondAttribute="centerX" id="Ocp-Hs-Vky"/>
-                            <constraint firstItem="3X9-2t-FnZ" firstAttribute="trailing" secondItem="7pr-Gk-FXw" secondAttribute="trailing" id="Q8D-Am-UDU"/>
+                            <constraint firstItem="7pr-Gk-FXw" firstAttribute="leading" secondItem="3X9-2t-FnZ" secondAttribute="leading" id="Uj4-qL-gH8"/>
+                            <constraint firstItem="Acc-4M-9yE" firstAttribute="top" secondItem="7pr-Gk-FXw" secondAttribute="bottom" constant="25" id="dGj-xi-P7C"/>
                             <constraint firstItem="Acc-4M-9yE" firstAttribute="width" secondItem="kKq-Ds-0Jt" secondAttribute="width" id="ePI-Na-Xrl"/>
+                            <constraint firstItem="7pr-Gk-FXw" firstAttribute="trailing" secondItem="3X9-2t-FnZ" secondAttribute="trailing" id="hta-RP-xSg"/>
                             <constraint firstItem="Acc-4M-9yE" firstAttribute="top" secondItem="7pr-Gk-FXw" secondAttribute="bottom" constant="25" id="xe9-6m-eOu"/>
                             <constraint firstItem="kKq-Ds-0Jt" firstAttribute="leading" secondItem="3X9-2t-FnZ" secondAttribute="leading" constant="25" id="xuC-RB-5ZF"/>
                             <constraint firstItem="3X9-2t-FnZ" firstAttribute="trailing" secondItem="Acc-4M-9yE" secondAttribute="trailing" constant="25" id="yQF-7S-zIB"/>
@@ -382,7 +386,7 @@
         <image name="Screen Shot 2019-07-15 at 2.30.22 PM" width="532" height="41"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gKJ-C2-H7f"/>
-        <segue reference="p3B-bP-b0h"/>
+        <segue reference="Flp-Jc-Ofr"/>
+        <segue reference="ySs-Vd-1NN"/>
     </inferredMetricsTieBreakers>
 </document>
