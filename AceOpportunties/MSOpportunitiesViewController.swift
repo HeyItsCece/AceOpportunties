@@ -23,16 +23,19 @@ class MSOpportunitiesViewController: UIViewController, UITableViewDataSource, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let test: Opportunity = Opportunity(context: context)
-        test.title = "testing"
-        test.details = "details about testing"
-        test.ages = "MS"
         getData()
     }
     
     func getData() {
         do {
             msOpportunities = try context.fetch(Opportunity.fetchRequest())
+            if (msOpportunities.count == 0) {
+                let test: Opportunity = Opportunity(context: context)
+                test.title = "testing"
+                test.details = "details about testing"
+                test.ages = "MS"
+                (UIApplication.shared.delegate as! AppDelegate).saveContext()
+            }
             print(msOpportunities)
             DispatchQueue.main.async {
                 self.msOpportunitiesTableView.reloadData()
@@ -55,6 +58,21 @@ class MSOpportunitiesViewController: UIViewController, UITableViewDataSource, UI
     
     override func viewDidAppear(_ animated: Bool) {
         getData()
+    }
+    
+    func applicationWillTerminate(_ application: UIApplication) {
+        self.saveContext()
+    }
+    
+    func saveContext() {
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch {
+                let nserror = error as NSError
+                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+            }
+        }
     }
     
     /*
