@@ -134,22 +134,22 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="728"/>
                                 <color key="backgroundColor" red="0.71583488539999995" green="1" blue="0.90682679389999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="msCell" textLabel="www-b9-FH2" detailTextLabel="8h4-3X-dTn" rowHeight="93" style="IBUITableViewCellStyleSubtitle" id="MrV-z1-V9I">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="93"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="msCell" textLabel="www-b9-FH2" detailTextLabel="8h4-3X-dTn" rowHeight="174" style="IBUITableViewCellStyleSubtitle" id="MrV-z1-V9I">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="174"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MrV-z1-V9I" id="cvT-ET-6Uq">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="92.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="173.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="www-b9-FH2">
-                                                    <rect key="frame" x="20" y="16.5" width="46.5" height="30"/>
+                                                    <rect key="frame" x="20" y="57.5" width="46.5" height="30"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8h4-3X-dTn">
-                                                    <rect key="frame" x="20" y="51" width="59" height="20.5"/>
+                                                    <rect key="frame" x="20" y="92" width="59" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -445,7 +445,7 @@
         <image name="Screen Shot 2019-07-15 at 2.30.22 PM" width="532" height="41"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gKJ-C2-H7f"/>
-        <segue reference="p3B-bP-b0h"/>
+        <segue reference="Flp-Jc-Ofr"/>
+        <segue reference="ySs-Vd-1NN"/>
     </inferredMetricsTieBreakers>
 </document>
