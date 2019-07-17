@@ -263,10 +263,10 @@
             </objects>
             <point key="canvasLocation" x="1446.376811594203" y="138.61607142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--College Opportunities View Controller-->
         <scene sceneID="UPG-eH-j1E">
             <objects>
-                <viewController id="C58-nI-tOl" customClass="ViewController" customModule="AceOpportunties" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="C58-nI-tOl" customClass="CollegeOpportunitiesViewController" customModule="AceOpportunties" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YVH-LL-NKy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -325,10 +325,10 @@
             </objects>
             <point key="canvasLocation" x="2112" y="139"/>
         </scene>
-        <!--View Controller-->
+        <!--List View Controller-->
         <scene sceneID="xXV-A5-bPB">
             <objects>
-                <viewController id="kX1-VD-ThP" sceneMemberID="viewController">
+                <viewController id="kX1-VD-ThP" customClass="ListViewController" customModule="AceOpportunties" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bAq-co-rLw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
