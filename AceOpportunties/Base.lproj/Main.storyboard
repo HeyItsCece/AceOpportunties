@@ -152,6 +152,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="List"/>
+                                <connections>
+                                    <segue destination="kX1-VD-ThP" kind="show" id="Flp-Jc-Ofr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKq-Ds-0Jt">
                                 <rect key="frame" x="25" y="807" width="169.5" height="40"/>
@@ -220,6 +223,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="List"/>
+                                <connections>
+                                    <segue destination="kX1-VD-ThP" kind="show" id="yYC-Lm-LK9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRs-1l-osD">
                                 <rect key="frame" x="25" y="797" width="169.5" height="40"/>
@@ -289,6 +295,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="List"/>
+                                <connections>
+                                    <segue destination="kX1-VD-ThP" kind="show" id="wNJ-so-DTZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXU-xd-kgv">
                                 <rect key="frame" x="20" y="843" width="62" height="42"/>
@@ -316,11 +325,60 @@
             </objects>
             <point key="canvasLocation" x="2112" y="139"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="xXV-A5-bPB">
+            <objects>
+                <viewController id="kX1-VD-ThP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bAq-co-rLw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Tpk-Py-7k8">
+                                <rect key="frame" x="0.0" y="44" width="414" height="803"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="dMk-kQ-fP1">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dMk-kQ-fP1" id="sWd-11-U0d">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.71583488539999995" green="1" blue="0.90682679389999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lqj-Ya-kh8">
+                                <rect key="frame" x="32" y="843" width="62" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Menu"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="43C-qs-4WW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkD-ZT-0ij">
+                                <rect key="frame" x="273" y="843" width="121" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Randomize"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.71583488539999995" green="1" blue="0.90682679389999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="oeM-dc-cVB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MAG-vJ-MeZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2849" y="139"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Screen Shot 2019-07-15 at 2.30.22 PM" width="532" height="41"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ySs-Vd-1NN"/>
+        <segue reference="wNJ-so-DTZ"/>
+        <segue reference="43C-qs-4WW"/>
     </inferredMetricsTieBreakers>
 </document>
