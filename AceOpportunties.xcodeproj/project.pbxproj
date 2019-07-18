@@ -14,6 +14,7 @@
 		CC70050122DCFC41002EBC5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC70050022DCFC41002EBC5F /* Assets.xcassets */; };
 		CC70050422DCFC41002EBC5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC70050222DCFC41002EBC5F /* LaunchScreen.storyboard */; };
 		CC70050C22DD0BBF002EBC5F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC70050B22DD0BBF002EBC5F /* HomeViewController.swift */; };
+		CCB5794C22E0BA99004E4BC4 /* RandomizeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB5794B22E0BA99004E4BC4 /* RandomizeListViewController.swift */; };
 		CCC549B122DE3C8F00859405 /* MSOpportunitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC549B022DE3C8F00859405 /* MSOpportunitiesViewController.swift */; };
 		CCC549B322DE3F8000859405 /* HSOpportunitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC549B222DE3F8000859405 /* HSOpportunitiesViewController.swift */; };
 		CCC549B522DF5AB200859405 /* CollegeOpportunitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC549B422DF5AB200859405 /* CollegeOpportunitiesViewController.swift */; };
@@ -30,6 +31,7 @@
 		CC70050322DCFC41002EBC5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC70050522DCFC41002EBC5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC70050B22DD0BBF002EBC5F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CCB5794B22E0BA99004E4BC4 /* RandomizeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomizeListViewController.swift; sourceTree = "<group>"; };
 		CCC549B022DE3C8F00859405 /* MSOpportunitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSOpportunitiesViewController.swift; sourceTree = "<group>"; };
 		CCC549B222DE3F8000859405 /* HSOpportunitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSOpportunitiesViewController.swift; sourceTree = "<group>"; };
 		CCC549B422DF5AB200859405 /* CollegeOpportunitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeOpportunitiesViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				CC7004F622DCFC3D002EBC5F /* AppDelegate.swift */,
 				CC7004F822DCFC3D002EBC5F /* ViewController.swift */,
 				CC7004FA22DCFC3D002EBC5F /* Main.storyboard */,
+				CCB5794B22E0BA99004E4BC4 /* RandomizeListViewController.swift */,
 				CCC549B622DF5AE700859405 /* ListViewController.swift */,
 				CCC549B422DF5AB200859405 /* CollegeOpportunitiesViewController.swift */,
 				CCC549B222DE3F8000859405 /* HSOpportunitiesViewController.swift */,
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCB5794C22E0BA99004E4BC4 /* RandomizeListViewController.swift in Sources */,
 				CC70050C22DD0BBF002EBC5F /* HomeViewController.swift in Sources */,
 				CC7004F922DCFC3D002EBC5F /* ViewController.swift in Sources */,
 				CCC549B522DF5AB200859405 /* CollegeOpportunitiesViewController.swift in Sources */,
