@@ -42,6 +42,7 @@ class HSOpportunitiesViewController: UIViewController, UITableViewDataSource, UI
                     test.details = hsOpportunities_details[i]
                     test.ages = "HS"
                     test.link = hsOpportunities_links[i]
+                    test.list = false
                     hsOpportunities.append(test)
                 }
                 (UIApplication.shared.delegate as! AppDelegate).saveContext()

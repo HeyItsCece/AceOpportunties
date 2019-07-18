@@ -42,6 +42,7 @@ class CollegeOpportunitiesViewController: UIViewController, UITableViewDataSourc
                     test.details = collegeOpportunities_details[i]
                     test.ages = "college"
                     test.link = collegeOpportunities_links[i]
+                    test.list = false
                     collegeOpportunities.append(test)
                 }
                 (UIApplication.shared.delegate as! AppDelegate).saveContext()

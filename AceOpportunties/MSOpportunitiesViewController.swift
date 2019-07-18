@@ -43,6 +43,7 @@ class MSOpportunitiesViewController: UIViewController, UITableViewDataSource, UI
                     test.details = msOpportunities_details[i]
                     test.ages = "MS"
                     test.link = msOpportunities_links[i]
+                    test.list = false
                     msOpportunities.append(test)
                 }
                 (UIApplication.shared.delegate as! AppDelegate).saveContext()
