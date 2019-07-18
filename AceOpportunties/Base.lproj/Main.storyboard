@@ -482,6 +482,7 @@
         <!--Randomize List View Controller-->
         <scene sceneID="Kth-nV-3Jx">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ruP-4w-621" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="gGf-BL-MNQ" customClass="RandomizeListViewController" customModule="AceOpportunties" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qnq-uG-YjR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -496,8 +497,8 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="I7u-YB-emM"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhZ-i3-sai">
-                                <rect key="frame" x="182" y="286" width="51" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recommend Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhZ-i3-sai">
+                                <rect key="frame" x="71" y="286" width="279" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -508,9 +509,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Randomize"/>
-                                <connections>
-                                    <action selector="HandlePickOpportunity:" destination="gGf-BL-MNQ" eventType="touchUpInside" id="JEP-tH-hZw"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iy-j9-xax">
                                 <rect key="frame" x="334" y="825" width="39" height="22"/>
@@ -525,13 +523,9 @@
                         <color key="backgroundColor" red="0.71583488539999995" green="1" blue="0.90682679389999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="er4-8m-RFb"/>
                     </view>
-                    <connections>
-                        <outlet property="RecommendLabel" destination="IhZ-i3-sai" id="QOh-ZR-77b"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ruP-4w-621" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3583" y="134"/>
+            <point key="canvasLocation" x="3624.6376811594205" y="184.82142857142856"/>
         </scene>
     </scenes>
     <resources>
