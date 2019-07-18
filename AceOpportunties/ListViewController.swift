@@ -7,9 +7,16 @@
 //
 
 import UIKit
+import CoreData
 
 class ListViewController: UIViewController {
-
+    
+    //////////// OUTLETS ////////////
+    @IBOutlet weak var listTableView: UITableView!
+    
+    /////////// VARIABLES ///////////
+    
+    /////////// FUNCTIONS ///////////
     override func viewDidLoad() {
         super.viewDidLoad()
 

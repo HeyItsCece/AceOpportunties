@@ -75,11 +75,8 @@ class MSOpportunitiesViewController: UIViewController, UITableViewDataSource, UI
         let cell = msOpportunitiesTableView.dequeueReusableCell(withIdentifier: "msCell", for: indexPath) as UITableViewCell
         cell.textLabel?.text = msOpportunities[indexPath.row].title
         cell.detailTextLabel?.text = msOpportunities[indexPath.row].details
-        cell.accessoryType = .detailDisclosureButton
-        //var button: UIButton = UIButton(buttonWithType:UIButtonTypeCustom);
-        //button.tag = indexPath.row;
-        //button.addTarget:self action:@selector(buttonClicked(_):)), forControlEvents:UIControlEventTouchDown];
-        //[cell addsubview: selectTaskBtn]
+        cell.accessoryType = .detailButton
+        
         print("\(msOpportunities[indexPath.row].link)")
         return cell
     }
@@ -92,6 +89,17 @@ class MSOpportunitiesViewController: UIViewController, UITableViewDataSource, UI
         var url = URL(string:msOpportunities[indexPath.row].link!)
         UIApplication.shared.canOpenURL(url!)
         UIApplication.shared.open(url!, options: [:],completionHandler: nil)
+    }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let modifyAction = UIContextualAction(style: .normal, title:  "Update", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
+            self.msOpportunities[indexPath.row].list = true
+            success(true)
+        })
+        modifyAction.title = "Add"
+        modifyAction.backgroundColor = .blue
+        
+        return UISwipeActionsConfiguration(actions: [modifyAction])
     }
     /*
     // MARK: - Navigation

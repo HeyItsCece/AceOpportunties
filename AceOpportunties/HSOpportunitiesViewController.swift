@@ -80,6 +80,16 @@ class HSOpportunitiesViewController: UIViewController, UITableViewDataSource, UI
         UIApplication.shared.open(url!, options: [:],completionHandler: nil)
     }
     
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let modifyAction = UIContextualAction(style: .normal, title:  "Update", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
+            self.hsOpportunities[indexPath.row].list = true
+            success(true)
+        })
+        modifyAction.title = "Add"
+        modifyAction.backgroundColor = .blue
+        
+        return UISwipeActionsConfiguration(actions: [modifyAction])
+    }
     /*
      // MARK: - Navigation
      
