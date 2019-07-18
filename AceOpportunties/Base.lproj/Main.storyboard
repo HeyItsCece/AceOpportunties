@@ -487,6 +487,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFX-ft-ijH">
+                                <rect key="frame" x="25" y="797" width="169.5" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4Mj-w8-13K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Menu"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="leW-rD-wc1"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYc-1b-al9">
                                 <rect key="frame" x="219.5" y="797" width="169.5" height="40"/>
                                 <constraints>
@@ -516,23 +527,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFX-ft-ijH">
-                                <rect key="frame" x="25" y="797" width="169.5" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="4Mj-w8-13K"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Menu"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="leW-rD-wc1"/>
-                                </connections>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ACE Logo" translatesAutoresizingMaskIntoConstraints="NO" id="sMf-gR-1ss">
+                                <rect key="frame" x="115" y="282.5" width="184" height="181"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.71583488539999995" green="1" blue="0.90682679389999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="DYc-1b-al9" firstAttribute="leading" secondItem="uFX-ft-ijH" secondAttribute="trailing" constant="25" id="3df-EX-cpB"/>
                             <constraint firstItem="BhR-Nz-Crx" firstAttribute="bottom" secondItem="DYc-1b-al9" secondAttribute="bottom" constant="25" id="7bl-pE-fXK"/>
                             <constraint firstItem="lV9-qF-hnU" firstAttribute="centerX" secondItem="kmY-jV-s3e" secondAttribute="centerX" id="EDY-zE-dd8"/>
+                            <constraint firstItem="sMf-gR-1ss" firstAttribute="centerX" secondItem="kmY-jV-s3e" secondAttribute="centerX" id="JH2-3w-tXJ"/>
+                            <constraint firstItem="sMf-gR-1ss" firstAttribute="centerY" secondItem="kmY-jV-s3e" secondAttribute="centerY" constant="-75" id="Mkt-98-4U5"/>
                             <constraint firstItem="uFX-ft-ijH" firstAttribute="leading" secondItem="BhR-Nz-Crx" secondAttribute="leading" constant="25" id="QZp-ZB-WVY"/>
                             <constraint firstItem="lV9-qF-hnU" firstAttribute="top" secondItem="BhR-Nz-Crx" secondAttribute="top" constant="100" id="RbM-8S-xER"/>
                             <constraint firstItem="BhR-Nz-Crx" firstAttribute="trailing" secondItem="lV9-qF-hnU" secondAttribute="trailing" constant="25" id="SkT-vT-cE8"/>
@@ -555,11 +560,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ACE Logo" width="184" height="181"/>
         <image name="Screen Shot 2019-07-15 at 2.30.22 PM" width="532" height="41"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="E3s-gd-6XY"/>
         <segue reference="jRO-7s-eWN"/>
-        <segue reference="0iq-HP-dtm"/>
+        <segue reference="leW-rD-wc1"/>
     </inferredMetricsTieBreakers>
 </document>
