@@ -510,15 +510,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1c-Jl-3XP">
-                                <rect key="frame" x="107" y="518" width="200" height="60"/>
+                                <rect key="frame" x="108.5" y="518" width="197" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="aib-GZ-oOC"/>
                                     <constraint firstAttribute="height" constant="60" id="xPp-q5-Xf8"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="Randomize"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Randomize List"/>
                                 <connections>
-                                    <action selector="randomizePressed:" destination="Lox-ZR-dLf" eventType="touchUpInside" id="7n7-Do-Bhd"/>
+                                    <action selector="randomizeListPressed:" destination="Lox-ZR-dLf" eventType="touchUpInside" id="2ou-xK-mVj"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press randomize to begin!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lV9-qF-hnU">
@@ -530,11 +529,46 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ACE Logo" translatesAutoresizingMaskIntoConstraints="NO" id="sMf-gR-1ss">
                                 <rect key="frame" x="115" y="282.5" width="184" height="181"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ig1-oF-pOZ">
+                                <rect key="frame" x="40" y="583" width="334" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="4n9-bd-YgE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Randomize Middle School"/>
+                                <connections>
+                                    <action selector="randomizeMSPressed:" destination="Lox-ZR-dLf" eventType="touchUpInside" id="IZU-T9-kfw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1m1-NI-hIE">
+                                <rect key="frame" x="53" y="648" width="308" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="kJM-L9-fFy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Randomize High School"/>
+                                <connections>
+                                    <action selector="randomizeHSPressed:" destination="Lox-ZR-dLf" eventType="touchUpInside" id="UnW-3u-01i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YI9-vg-aLg">
+                                <rect key="frame" x="82.5" y="713" width="249" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="L63-xS-4SN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Randomize College"/>
+                                <connections>
+                                    <action selector="randomizeCollegePressed:" destination="Lox-ZR-dLf" eventType="touchUpInside" id="IVf-Rv-jJX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.71583488539999995" green="1" blue="0.90682679389999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="DYc-1b-al9" firstAttribute="leading" secondItem="uFX-ft-ijH" secondAttribute="trailing" constant="25" id="3df-EX-cpB"/>
+                            <constraint firstItem="YI9-vg-aLg" firstAttribute="top" secondItem="1m1-NI-hIE" secondAttribute="bottom" constant="5" id="58p-r4-EHp"/>
                             <constraint firstItem="BhR-Nz-Crx" firstAttribute="bottom" secondItem="DYc-1b-al9" secondAttribute="bottom" constant="25" id="7bl-pE-fXK"/>
+                            <constraint firstItem="ig1-oF-pOZ" firstAttribute="centerX" secondItem="kmY-jV-s3e" secondAttribute="centerX" id="Bep-0Q-kHA"/>
                             <constraint firstItem="lV9-qF-hnU" firstAttribute="centerX" secondItem="kmY-jV-s3e" secondAttribute="centerX" id="EDY-zE-dd8"/>
                             <constraint firstItem="sMf-gR-1ss" firstAttribute="centerX" secondItem="kmY-jV-s3e" secondAttribute="centerX" id="JH2-3w-tXJ"/>
                             <constraint firstItem="sMf-gR-1ss" firstAttribute="centerY" secondItem="kmY-jV-s3e" secondAttribute="centerY" constant="-75" id="Mkt-98-4U5"/>
@@ -542,11 +576,15 @@
                             <constraint firstItem="lV9-qF-hnU" firstAttribute="top" secondItem="BhR-Nz-Crx" secondAttribute="top" constant="100" id="RbM-8S-xER"/>
                             <constraint firstItem="BhR-Nz-Crx" firstAttribute="trailing" secondItem="lV9-qF-hnU" secondAttribute="trailing" constant="25" id="SkT-vT-cE8"/>
                             <constraint firstItem="uFX-ft-ijH" firstAttribute="width" secondItem="DYc-1b-al9" secondAttribute="width" id="XdZ-z6-dQx"/>
+                            <constraint firstItem="1m1-NI-hIE" firstAttribute="top" secondItem="ig1-oF-pOZ" secondAttribute="bottom" constant="5" id="YUB-mh-2Oj"/>
                             <constraint firstItem="V1c-Jl-3XP" firstAttribute="centerX" secondItem="kmY-jV-s3e" secondAttribute="centerX" id="aP9-PQ-1H5"/>
+                            <constraint firstItem="1m1-NI-hIE" firstAttribute="centerX" secondItem="kmY-jV-s3e" secondAttribute="centerX" id="cG6-YF-Iea"/>
                             <constraint firstItem="BhR-Nz-Crx" firstAttribute="bottom" secondItem="uFX-ft-ijH" secondAttribute="bottom" constant="25" id="eZ8-PZ-MbD"/>
                             <constraint firstItem="V1c-Jl-3XP" firstAttribute="centerY" secondItem="kmY-jV-s3e" secondAttribute="centerY" constant="100" id="h5w-tx-gLF"/>
                             <constraint firstItem="lV9-qF-hnU" firstAttribute="leading" secondItem="BhR-Nz-Crx" secondAttribute="leading" constant="25" id="h6J-Si-4Jg"/>
+                            <constraint firstItem="YI9-vg-aLg" firstAttribute="centerX" secondItem="kmY-jV-s3e" secondAttribute="centerX" id="jkF-6N-J57"/>
                             <constraint firstItem="BhR-Nz-Crx" firstAttribute="trailing" secondItem="DYc-1b-al9" secondAttribute="trailing" constant="25" id="oHE-39-VZ8"/>
+                            <constraint firstItem="ig1-oF-pOZ" firstAttribute="top" secondItem="V1c-Jl-3XP" secondAttribute="bottom" constant="5" id="paX-gO-WJ3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BhR-Nz-Crx"/>
                     </view>

@@ -16,15 +16,16 @@ class RandomizeListViewController: UIViewController {
     /////////// VARIABLES //////////////
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var listOpportunities: [Opportunity] = []
+    var allOpportunities: [Opportunity] = []
     
     //////////// FUNCTIONS /////////////
     override func viewDidLoad() {
         super.viewDidLoad()
-        getData()
+        getListData()
         // Do any additional setup after loading the view.
     }
     
-    func getData() {
+    func getListData() {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Opportunity")
         request.predicate = NSPredicate(format: "list == %@", NSNumber(booleanLiteral: true))
         do {
@@ -34,7 +35,17 @@ class RandomizeListViewController: UIViewController {
         }
     }
     
-    func getRecommendation() {
+    func getCustomData(search:String) {
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Opportunity")
+        request.predicate = NSPredicate(format: "ages == %@", search)
+        do {
+            allOpportunities = try context.fetch(request) as! [Opportunity]
+        } catch {
+            print("Couldn't fetch data")
+        }
+    }
+    
+    func getListRecommendation() {
         if (listOpportunities.count < 1) {
             recommendLabel.text = "Add more to your list!"
         }
@@ -43,9 +54,27 @@ class RandomizeListViewController: UIViewController {
             recommendLabel.text = randomOpportunity?.title
         }
     }
+    
+    func getCustomRecommendation(age:String) {
+        getCustomData(search:age)
+        var randomOpportunity = allOpportunities.randomElement()
+        recommendLabel.text = randomOpportunity?.title
+    }
 
-    @IBAction func randomizePressed(_ sender: Any) {
-        getRecommendation()
+    @IBAction func randomizeListPressed(_ sender: Any) {
+        getListRecommendation()
+    }
+    
+    @IBAction func randomizeMSPressed(_ sender: Any) {
+        getCustomRecommendation(age: "MS")
+    }
+    
+    @IBAction func randomizeHSPressed(_ sender: Any) {
+        getCustomRecommendation(age: "HS")
+    }
+    
+    @IBAction func randomizeCollegePressed(_ sender: Any) {
+        getCustomRecommendation(age: "college")
     }
     
     /*
