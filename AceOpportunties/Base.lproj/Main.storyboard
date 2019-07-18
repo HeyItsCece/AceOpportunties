@@ -70,8 +70,8 @@
                                     <segue destination="C58-nI-tOl" kind="show" id="F9Q-h4-rUH"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P2r-dD-s92">
-                                <rect key="frame" x="75.5" y="214" width="281" height="144"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ACE Logo" translatesAutoresizingMaskIntoConstraints="NO" id="P2r-dD-s92">
+                                <rect key="frame" x="76" y="176" width="281" height="211"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="281" id="MmH-9J-Tka"/>
                                     <constraint firstAttribute="height" constant="144" id="adp-L8-30a"/>
