@@ -83,6 +83,7 @@ class HSOpportunitiesViewController: UIViewController, UITableViewDataSource, UI
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let modifyAction = UIContextualAction(style: .normal, title:  "Update", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
             self.hsOpportunities[indexPath.row].list = true
+            (UIApplication.shared.delegate as! AppDelegate).saveContext()
             success(true)
         })
         modifyAction.title = "Add"
