@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC5F236822E0EEEC00CD0438 /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5F236722E0EEEC00CD0438 /* InstructionsViewController.swift */; };
 		CC7004F722DCFC3D002EBC5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7004F622DCFC3D002EBC5F /* AppDelegate.swift */; };
 		CC7004F922DCFC3D002EBC5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7004F822DCFC3D002EBC5F /* ViewController.swift */; };
 		CC7004FC22DCFC3D002EBC5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC7004FA22DCFC3D002EBC5F /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC5F236722E0EEEC00CD0438 /* InstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
 		CC7004F322DCFC3D002EBC5F /* AceOpportunties.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AceOpportunties.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC7004F622DCFC3D002EBC5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC7004F822DCFC3D002EBC5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				CC7004F622DCFC3D002EBC5F /* AppDelegate.swift */,
 				CC7004F822DCFC3D002EBC5F /* ViewController.swift */,
 				CC7004FA22DCFC3D002EBC5F /* Main.storyboard */,
+				CC5F236722E0EEEC00CD0438 /* InstructionsViewController.swift */,
 				CCB5794B22E0BA99004E4BC4 /* RandomizeListViewController.swift */,
 				CCC549B622DF5AE700859405 /* ListViewController.swift */,
 				CCC549B422DF5AB200859405 /* CollegeOpportunitiesViewController.swift */,
@@ -160,6 +163,7 @@
 				CC70050C22DD0BBF002EBC5F /* HomeViewController.swift in Sources */,
 				CC7004F922DCFC3D002EBC5F /* ViewController.swift in Sources */,
 				CCC549B522DF5AB200859405 /* CollegeOpportunitiesViewController.swift in Sources */,
+				CC5F236822E0EEEC00CD0438 /* InstructionsViewController.swift in Sources */,
 				CC7004FF22DCFC3D002EBC5F /* AceOpportunties.xcdatamodeld in Sources */,
 				CCC549B122DE3C8F00859405 /* MSOpportunitiesViewController.swift in Sources */,
 				CC7004F722DCFC3D002EBC5F /* AppDelegate.swift in Sources */,
