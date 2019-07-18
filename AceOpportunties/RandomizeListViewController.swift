@@ -44,9 +44,10 @@ class RandomizeListViewController: UIViewController {
         }
     }
 
-    @IBAction func randomizedPressed(_ sender: Any) {
+    @IBAction func randomizePressed(_ sender: Any) {
         getRecommendation()
     }
+    
     /*
     // MARK: - Navigation
 

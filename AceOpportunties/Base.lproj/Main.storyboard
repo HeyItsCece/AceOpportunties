@@ -441,7 +441,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Randomize"/>
                                 <connections>
-                                    <segue destination="gGf-BL-MNQ" kind="show" id="4VV-BA-cjr"/>
+                                    <segue destination="Lox-ZR-dLf" kind="show" id="E3s-gd-6XY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8Y-GO-KP4">
@@ -480,65 +480,86 @@
             <point key="canvasLocation" x="2847.826086956522" y="138.61607142857142"/>
         </scene>
         <!--Randomize List View Controller-->
-        <scene sceneID="Kth-nV-3Jx">
+        <scene sceneID="xrH-pf-cdx">
             <objects>
-                <viewController id="gGf-BL-MNQ" customClass="RandomizeListViewController" customModule="AceOpportunties" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Qnq-uG-YjR">
+                <viewController id="Lox-ZR-dLf" customClass="RandomizeListViewController" customModule="AceOpportunties" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kmY-jV-s3e">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6R-Ch-lTQ">
-                                <rect key="frame" x="48" y="811" width="64" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Menu"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="I7u-YB-emM"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Press randomize to begin!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhZ-i3-sai">
-                                <rect key="frame" x="71" y="286" width="279" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3MM-u6-JY2">
-                                <rect key="frame" x="112" y="518" width="191" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="Randomize"/>
-                                <connections>
-                                    <action selector="randomizedPressed:" destination="gGf-BL-MNQ" eventType="touchUpInside" id="bjX-qH-gPg"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iy-j9-xax">
-                                <rect key="frame" x="334" y="825" width="39" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYc-1b-al9">
+                                <rect key="frame" x="219.5" y="797" width="169.5" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5ZC-2c-fqb"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="List"/>
                                 <connections>
-                                    <segue destination="kX1-VD-ThP" kind="show" id="fwq-hu-5M9"/>
+                                    <segue destination="kX1-VD-ThP" kind="show" id="jRO-7s-eWN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1c-Jl-3XP">
+                                <rect key="frame" x="107" y="518" width="200" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="aib-GZ-oOC"/>
+                                    <constraint firstAttribute="height" constant="60" id="xPp-q5-Xf8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Randomize"/>
+                                <connections>
+                                    <action selector="randomizePressed:" destination="Lox-ZR-dLf" eventType="touchUpInside" id="7n7-Do-Bhd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press randomize to begin!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lV9-qF-hnU">
+                                <rect key="frame" x="25" y="144" width="364" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFX-ft-ijH">
+                                <rect key="frame" x="25" y="797" width="169.5" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4Mj-w8-13K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Menu"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="leW-rD-wc1"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.71583488539999995" green="1" blue="0.90682679389999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="er4-8m-RFb"/>
+                        <constraints>
+                            <constraint firstItem="DYc-1b-al9" firstAttribute="leading" secondItem="uFX-ft-ijH" secondAttribute="trailing" constant="25" id="3df-EX-cpB"/>
+                            <constraint firstItem="BhR-Nz-Crx" firstAttribute="bottom" secondItem="DYc-1b-al9" secondAttribute="bottom" constant="25" id="7bl-pE-fXK"/>
+                            <constraint firstItem="lV9-qF-hnU" firstAttribute="centerX" secondItem="kmY-jV-s3e" secondAttribute="centerX" id="EDY-zE-dd8"/>
+                            <constraint firstItem="uFX-ft-ijH" firstAttribute="leading" secondItem="BhR-Nz-Crx" secondAttribute="leading" constant="25" id="QZp-ZB-WVY"/>
+                            <constraint firstItem="lV9-qF-hnU" firstAttribute="top" secondItem="BhR-Nz-Crx" secondAttribute="top" constant="100" id="RbM-8S-xER"/>
+                            <constraint firstItem="BhR-Nz-Crx" firstAttribute="trailing" secondItem="lV9-qF-hnU" secondAttribute="trailing" constant="25" id="SkT-vT-cE8"/>
+                            <constraint firstItem="uFX-ft-ijH" firstAttribute="width" secondItem="DYc-1b-al9" secondAttribute="width" id="XdZ-z6-dQx"/>
+                            <constraint firstItem="V1c-Jl-3XP" firstAttribute="centerX" secondItem="kmY-jV-s3e" secondAttribute="centerX" id="aP9-PQ-1H5"/>
+                            <constraint firstItem="BhR-Nz-Crx" firstAttribute="bottom" secondItem="uFX-ft-ijH" secondAttribute="bottom" constant="25" id="eZ8-PZ-MbD"/>
+                            <constraint firstItem="V1c-Jl-3XP" firstAttribute="centerY" secondItem="kmY-jV-s3e" secondAttribute="centerY" constant="100" id="h5w-tx-gLF"/>
+                            <constraint firstItem="lV9-qF-hnU" firstAttribute="leading" secondItem="BhR-Nz-Crx" secondAttribute="leading" constant="25" id="h6J-Si-4Jg"/>
+                            <constraint firstItem="BhR-Nz-Crx" firstAttribute="trailing" secondItem="DYc-1b-al9" secondAttribute="trailing" constant="25" id="oHE-39-VZ8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BhR-Nz-Crx"/>
                     </view>
                     <connections>
-                        <outlet property="recommendLabel" destination="IhZ-i3-sai" id="5BW-ML-2Mf"/>
+                        <outlet property="recommendLabel" destination="lV9-qF-hnU" id="o7V-nq-OlJ"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ruP-4w-621" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wAg-dX-c6x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3620" y="139"/>
+            <point key="canvasLocation" x="3615.9420289855075" y="138.61607142857142"/>
         </scene>
     </scenes>
     <resources>
         <image name="Screen Shot 2019-07-15 at 2.30.22 PM" width="532" height="41"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fwq-hu-5M9"/>
-        <segue reference="I7u-YB-emM"/>
+        <segue reference="E3s-gd-6XY"/>
+        <segue reference="jRO-7s-eWN"/>
+        <segue reference="0iq-HP-dtm"/>
     </inferredMetricsTieBreakers>
 </document>
